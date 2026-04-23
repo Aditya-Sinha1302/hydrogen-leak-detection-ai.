@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydrogen AI Dashboard | The Margin Squad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Background Ambient Glows -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    
+    <!-- Floating Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i data-lucide="droplet" class="icon-accent"></i>
+            <span>H2 Alert System</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#overview"><i data-lucide="clipboard-list"></i> Overview</a></li>
+            <li><a href="#research"><i data-lucide="book-open"></i> Research</a></li>
+            <li><a href="#methodology"><i data-lucide="cpu"></i> Methodology</a></li>
+            <li><a href="#live-simulation" class="btn-simulation"><i data-lucide="activity"></i> Live Simulation</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg-visual"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="badge">
+                <span class="pulse-dot"></span>
+                The Margin Squad
+            </div>
+            <h1>Hydrogen Leak Detection <br> <span class="gradient-text">& Fire Risk Analysis</span></h1>
+            <p>Using Advanced Sensor Simulation and AI for Next-Generation Industrial Safety</p>
+            <a href="#live-simulation" class="cta-button">View Live Telemetry <i data-lucide="arrow-right"></i></a>
+        </div>
+    </header>
+
+    <!-- Strategic Overview -->
+    <section class="overview wrapper" id="overview">
+        <div class="section-title">
+            <h2>Strategic Overview</h2>
+            <div class="accent-line"></div>
+        </div>
+        <div class="overview-grid">
+            <div class="card glass-card">
+                <div class="card-glow"></div>
+                <i data-lucide="zap" class="card-icon"></i>
+                <h3>Introduction</h3>
+                <p>Hydrogen holds immense potential as a clean energy carrier, offering zero-emission fuel for various applications. As industries shift towards sustainability, safe hydrogen storage and usage become paramount.</p>
+            </div>
+            <div class="card glass-card">
+                <div class="card-glow"></div>
+                <i data-lucide="flame" class="card-icon danger-text"></i>
+                <h3>Problem Definition</h3>
+                <p>Hydrogen is highly flammable and leak-prone due to its small molecular size. With a wide flammability range (4-75%), undetected leaks present critical ignition and explosion hazards.</p>
+            </div>
+            <div class="card glass-card">
+                <div class="card-glow"></div>
+                <i data-lucide="crosshair" class="card-icon"></i>
+                <h3>Project Objectives</h3>
+                <p>Develop an AI-driven, real-time monitoring system utilizing TCN models and sensor arrays to predict, detect, and mitigate hydrogen leakage risks before critical danger thresholds.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Literature Data Hub -->
+    <section class="research wrapper" id="research">
+        <div class="section-title">
+            <h2>Literature Data Hub</h2>
+            <div class="accent-line"></div>
+        </div>
+        <div class="card glass-card table-container">
+            <div class="table-header">
+                <h3>Core Methodological References</h3>
+                <div class="search-box">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <input type="text" id="search-paper" placeholder="Search papers by author...">
+                </div>
+            </div>
+            <table id="literature-table">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Author(s)</th>
+                        <th>Paper Title</th>
+                        <th>Engineering Remarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023</td>
+                        <td><span class="highlight">Wang et al.</span></td>
+                        <td>Deep Learning for Gas Leak Detection utilizing Multi-Sensor Arrays</td>
+                        <td>Foundation for applying Time-Convolutional Networks (TCN) to spatial sensor inputs.</td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td><span class="highlight">Li & Zhang</span></td>
+                        <td>FSA Modeling in Hydrogen Refueling Stations</td>
+                        <td>Provided architectural basis for building Fire Risk Safety Analysis frameworks.</td>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
+                        <td><span class="highlight">Sergeev et al.</span></td>
+                        <td>IoT Edge Computing with ESP32 for Hazardous Environments</td>
+                        <td>Validated the low-latency hardware stack (ESP32) for our deployment matrix.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Technical Methodology -->
+    <section class="methodology wrapper" id="methodology">
+        <div class="section-title">
+            <h2>Technical Methodology</h2>
+            <div class="accent-line"></div>
+        </div>
+        
+        <div class="methodology-content">
+            <div class="process-flow card glass-card">
+                <h3>Process Pipeline</h3>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <p><strong>Risk Analysis</strong><br>FSA/FTA framework design</p>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <p><strong>Data Collection</strong><br>MQ-8 sensor telemetry</p>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step">
+                        <div class="step-num shadow-glow">3</div>
+                        <p><strong>AI Modeling</strong><br>TCN predictive analysis</p>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step">
+                        <div class="step-num">4</div>
+                        <p><strong>Evaluation</strong><br>System actuation alerts</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stack-architecture card glass-card">
+                <h3>System Stack Integration</h3>
+                <ul class="stack-list">
+                    <li><i data-lucide="cpu" class="stack-icon"></i> <strong>Microcontroller:</strong> ESP32 MCU Edge node</li>
+                    <li><i data-lucide="radio" class="stack-icon"></i> <strong>Sensing:</strong> MQ-8 Hydrogen Sensor Array</li>
+                    <li><i data-lucide="network" class="stack-icon"></i> <strong>AI Engine:</strong> PyTorch TCN pipeline</li>
+                    <li><i data-lucide="server" class="stack-icon"></i> <strong>Data Bus:</strong> MQTT Broker interface</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simulated Analytics Dashboard -->
+    <section class="simulation wrapper" id="live-simulation">
+        <div class="section-title">
+            <h2>Live Telemetry Dashboard <span class="live-dot"></span></h2>
+            <div class="accent-line"></div>
+        </div>
+
+        <div class="dashboard-controls glass-card card">
+            <span>Force System Override:</span>
+            <button class="btn btn-simulate safe" onclick="forceSimulation('safe')">Simulate Safe</button>
+            <button class="btn btn-simulate alert" onclick="forceSimulation('alert')">Simulate Alert</button>
+            <button class="btn btn-simulate danger" onclick="forceSimulation('danger')">Simulate Danger</button>
+        </div>
+
+        <div class="dashboard-grid">
+            <!-- Graph Panel -->
+            <div class="card glass-card graph-panel">
+                <div class="panel-header">
+                    <h3><i data-lucide="activity"></i> H2 Concentration (PPM / Volume %)</h3>
+                    <div class="value-display">
+                        <span id="current-h2">0.0%</span>
+                        <div class="trend-indicator"><i data-lucide="trending-up"></i></div>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="telemetryChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Status Side Panel -->
+            <div class="status-panel">
+                <div class="card glass-card status-card" id="system-status">
+                    <div class="status-header">
+                        <h3>System State</h3>
+                        <div class="led-indicator" id="status-led"></div>
+                    </div>
+                    <h2 id="status-text">NORMAL</h2>
+                    <p id="status-subtext">Operating within safe parameters.</p>
+                </div>
+                
+                <div class="card glass-card alert-log">
+                    <h3>Recent Events</h3>
+                    <ul id="event-log">
+                        <!-- Events populated by JS -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-glow"></div>
+        <p>&copy; 2026 The Margin Squad | Next-Gen Safety Protocols</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>
